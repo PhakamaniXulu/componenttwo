@@ -1,0 +1,75 @@
+.financial-container{
+    background-color:#FAFAFA ;
+
+    h1{
+        padding-top: 60.83px;
+    }
+}
+.cards-container{
+   position: relative;
+   margin: auto;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+   width: 249px;
+   height: 402px;
+
+   box-shadow: 0px 1px 2px #00000029;
+   border-radius: 2px;
+  
+
+   h4,p{
+    padding: 0px 10px;
+   }
+    .banner-img{
+         width: 249px;
+         height: 140px;
+    }
+    .share-img{
+        padding-left: 15px;
+        padding-bottom: 10px;
+        position: absolute;
+        width: 12.62px;
+        height: 13.43px;
+
+        bottom: 0;
+        left: 0;
+
+    }
+    .logo-img{
+        position: absolute;
+        width: 28px;
+        height: 8px;
+        padding-right: 11px;
+        padding-bottom: 10px;
+        bottom: 0;
+        right: 0;
+    }
+    figcaption{
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-right: 48px;
+        padding-bottom: 7px;
+    }
+    ul{
+
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+       
+        li{
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+      
+    }
+
+
+}
