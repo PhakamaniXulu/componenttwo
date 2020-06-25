@@ -1,30 +1,38 @@
-.btn-group{
-    width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top:90px;
-    button{
-        background-color: white;
-        border: 0.30000001192092896px solid #70707029;
-        width: 56px;
-        height: 56px;
-        cursor: pointer;
-        float: left;
-        border-radius:  1px;
-        border-bottom: none;
-        border-top: none;
+.nav{
 
-        box-shadow: 0px 5px 15px #0000002E;
+    top:10px;
+    box-shadow: 0px 5px 15px #0000002E;
+     img{
+         padding-top: 15px;
+         padding-bottom: 15px;
+     }
     }
 
+
+
+.container{
+    background-color: white;
 }
-.btn-group::after{
+.container ul{
+    position: relative;
+}
+.container .nav-link{
+    position: relative;
+    z-index: 99999;
+
+}
+.panel{
     content: "";
-    clear: both;
-    display: table;
-}
-.btn-group button:not(:last-child){
-    border-right:none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3A3C3F;
+    
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 0;
+    box-shadow: 0px 5px 15px #0000002E;
+    
+
+
 }

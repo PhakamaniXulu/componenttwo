@@ -3,27 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/dist/css/main.min.css">
+    <script hr></script>
     {%block title%}
     {%endblock%}
 </head>
 <body>
     
-    <div class="head-container">
+    <div class="head-container text-center">
         <h2>Business Resource Library</h2>
         <p>Select the category icons below to explore.</p>
     
-    <div class="btn-group">
-        <button><img src="../static/src/img/credit-card.png" alt=""></button>
-        <button><img src="../static/src/img/handshake.png" alt=""></button>
-        <button><img src="../static/src/img/church.png" alt=""></button>
-        <button><img src="../static/src/img/landmark.png" alt=""></button>
-        <button><img src="../static/src/img/crown.png" alt=""></button>
-        <button><img src="../static/src/img/Group 67.png" alt=""></button>
+    <div class="container d-flex justify-content-center">
+        <ul class="nav bg-white" role="tablist">
+            <li class="nav-item">
+              <a href="#step-1" id="step1-tab" class="nav-link active" aria-selected="true" data-toggle="tab" role="tab"><img src="../static/src/img/credit-card.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a href="#step-2" id="step2-tab" class="nav-link" aria-selected="true" data-toggle="tab" role="tab"><img src="../static/src/img/handshake.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a href="#step-3" id="step3-tab" class="nav-link" aria-selected="true" data-toggle="tab" role="tab"><img src="../static/src/img/church.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a href="#step-4" id="step4-tab" class="nav-link" aria-selected="true" data-toggle="tab" role="tab"><img src="../static/src/img/landmark.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a href="#step-5" id="step5-tab" class="nav-link" aria-selected="true" data-toggle="tab" role="tab"><img src="../static/src/img/crown.png" alt=""></a>
+              </li>
+              <li class="nav-item">
+                <a href="#step-6" id="step6-tab" class="nav-link" aria-selected="true" data-toggle="tab" role="tab"><img src="../static/src/img/Group 67.png" alt=""></a>
+              </li>
+              <div class="panel rounded">
+
+              </div>
+          </ul>
 
       </div>
+
     </div>
      {%block body%}
      {%endblock%}
+     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+     <script src="../static/src/js/scripts.js"></script>
 </body>
 </html>
