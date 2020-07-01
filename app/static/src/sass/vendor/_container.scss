@@ -1,177 +1,207 @@
+@import '../stylings/fonts';
+@import '../stylings/colors';
+
 .tab-content{
-    background-color:#ff0000;
+    background-color:#FAFAFA;
     width: 100%;
+    box-shadow: 0px -4px 15px rgba(180, 180, 180, 0.507);
+    
 
     h4{
         color:#5DD5A8;
         font-weight: bolder;
+        font-size: 18px;
         padding-top: 60.83px;
         text-align: center;
-        margin-bottom: 33px;
+        margin-bottom: 22px;
         margin-top: 74px;
-
-      
+        font-family: 'robotobold';
 
     }
-}
-ol{
+    .card-div{
+        position: relative;
+        left: 10.60%;
+        ol{
      
-    li{
-        list-style: none;
-    }
-  
-
-}
-
-.cards-container{
-   position: relative;
-
-   margin:auto;
-
-   background-color: white;
-   width: 249px;
-   height: 402px;
-
-   box-shadow: 0px 1px 2px #00000029;
-   border-radius: 2px;
-   margin-bottom:  17px;
-  
-
-   strong{
-    padding-top: 18px;
-    font-size:small;
-    margin-bottom: 12px;
-    margin-left: 17px;
-
-}
-.video-link{
-   
-    position: absolute;
-    top: 15px;
-    left: 20px;   
-    text-decoration: none;
-    width: 75px;
-    height: 30px;
-    color: #FFFFFF ;
-    background-color:#2929296b;
-   
-    
-    cursor: pointer;
-
-
- 
-    img{
-       width:  23.32px;
-      
-       padding-bottom:6px;
-       padding-top: 5.9px;
-       
-       padding-right: 7px;
-       opacity: 100%;
-    }
-}
-p{
-    margin: 5px 17px;
-    font-size: smaller;
-    font-weight: normal;
- 
-}
-
-    .banner-img{
-         width: 249px;
-         height: 140px;
-    }
-    .share-img{
-        margin-bottom: 15px;
-        margin-left: 15px;
-        position: absolute;
-        width: 12.62px;
-        height: 13.43px;
-
-        bottom: 0;
-        left: 0;
-
-    }
-    .logo-img{
-        margin-bottom: 15px;
-        margin-right: 15px;
-        position: absolute;
-        width: 28px;
-        height: 8px;
-        bottom: 0;
-        right: 0;
-    }
-    figcaption{
-
-        position: absolute;
-        font-size: x-small;
-        font-weight: bolder;
-        font-weight: 100;
-        bottom: 0;
-        right: 0;
-        padding-right: 48px;
-        padding-bottom: 11px;
-    }
-    small{
-
-     text-align: left;
-     justify-self: left;
-     color:pink;
-     margin-left: 17px;
-     
-    }
-    ul{
-
-        text-decoration: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-right: auto;
-        margin-left: auto;
-       
-        li{
-            text-decoration: none;
-            display: flex;
-            justify-content: space-between;
+            li{
+                list-style: none;
+                .cards-container{
+                    position: relative;
+                    background-color: white;
+                    width: 249px;
+                    height: 402px;
+                    margin-left: 29px;
+                    box-shadow: 0px 1px 2px #00000029;
+                    border-radius: 2px;
+                    margin-bottom:  17px;
+                   
+                 
+                    strong{
+                     display:inline-flex;
+                     
+                     font-size:14px;
+                     margin-bottom: 12px;
+                     margin-left: 17px;
+                     margin-right: 17px;
+                     color:$mainColor;
+                     font-family: 'robotobold';
+                    
+                    }
+                 small{
+                 
+                     text-align: left;
+                     justify-self: left;
+                     color:$mainColor;
+                     margin-left: 17px;
+                     color: $mainColor;
+                     font-family: 'robotolight';
+                     font-size: 11px;
+                     
+                    }
+                    p{
+                     margin: 5px 17px;
+                     font-size: 13px;
+                     font-weight: normal;
+                     font-family: 'robotomedium';
+                  
+                 }
+                 .video-link{
+                    
+                     position: absolute;
+                     top: 15px;
+                     left: 20px;   
+                     text-decoration: none;
+                     border-style: none;
+                     width: 75px;
+                     height: 30px;
+                     color: #FFFFFF ;
+                     font-family: 'robotolight';
+                     font-size: 14px;
+                     background-color:#2929296b;
+                    
+                     
+                     cursor: pointer;
+                   
+                     img{
+            
+                        opacity: 100%;
+                        padding-right: 5px;
+                     }
+                  
+                 }
+                 
+                 
+                     .banner-img{
+                          width: 249px;
+                          height: 140px;
+                          margin-bottom: 18px;
+                     }
+                     .share-img{
+                         margin-bottom: 15px;
+                         margin-left: 15px;
+                         position: absolute;
+                         width: 12.62px;
+                         height: 13.43px;
+                         bottom: 0;
+                         left: 0;
+                 
+                     }
+                     .logo-img{
+                         margin-bottom: 15px;
+                         margin-right: 15px;
+                         position: absolute;
+                         width: 28px;
+                         height: 8px;
+                         bottom: 0;
+                         right: 0;
+                     }
+                     figcaption{
+                 
+                         position: absolute;
+                         font-family: 'robotolight';
+                         color: $mainColor;
+                         font-size: 12px;
+                         bottom: 0; 
+                         right: 0;
+                         padding-right: 48px;
+                         padding-bottom: 11px;
+                     }
+                 
+                     ul{
+                 
+                         text-decoration: none;
+                         display: flex;
+                         justify-content: space-between;
+                         align-items: center;
+                         margin-right: auto;
+                         margin-left: auto;
+                        
+                         li{
+                             text-decoration: none;
+                             display: flex;
+                             justify-content: space-between;
+                         }
+                         
+                       
+                     }
+                 
+                 
+                 }
+               
+            }
+          
+        
         }
         
-      
+
+    
     }
-
-
+    
 }
+//END OF TAB-CONTENT
+
 .below-card{
     margin-top: 12px;
     height: 100px;
 }
+// END OF FOOTER DIV
 
 
 @media screen and (min-width: 682px) {
+
     .tab-content{
+     height: 700px;
      padding:0 100px;
+
+    
      
     h4{
          display: none;
       
 
     }
-    }
-    .cards-container{
-        margin-top: 118px;
-    }
-    ol{
+    .card-div{
+        position: absolute;
+        left: 5.60%;
+        ol{
      
-        display: flex;
-       
-        li{
-            list-style: none;
+            display: flex;
+           
+            li{
+                list-style: none;
+                .cards-container{
+                    margin-top: 120px;
+                }
             
+                
+            }
+          
+        
         }
-      
+       
     
     }
-    .cards-container{
-        margin-right: 29px;
-       
     }
+
+//END OF TAB CONTENT
   }

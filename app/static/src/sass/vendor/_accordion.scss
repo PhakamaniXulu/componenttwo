@@ -1,67 +1,170 @@
+@import '../stylings/fonts';
+@import '../stylings/colors';
 
-.row{
- 
- 
-    box-shadow: 0px 0px 8px 2px #0000002E;
+
+.footer-container{
+    background-color: #FAFAFA;
+    box-shadow: 0 8px 5px -2px #0000002E;
+    margin-bottom: 14px;
+    .container{
+        background-color: #FAFAFA;
+        margin-top: -17px;
+        .row{
+             background-color: #FAFAFA;
+             .card{
+                box-shadow: 0px 1px 2px #00000029; 
+                border-bottom: none;
+                height: 60%;
+               
+                .card-header{
+
+                    background-color: white!important;
+                    border: none !important;
+                    padding:10px 22px !important;
+                    margin-bottom:20px;
+                    .btn-link{
+                        width: 100%;
+                        
+                        
+                        font-family: 'robotomedium';
+                        color:  $mainColor !important;
+                        font-weight: bold !important;
+                        text-align: left !important;
+                        text-decoration: none !important;
+
+
+                        
+                       
+                       
+                    }
+                    .btn-link::after{
+                        //minus sign
+                        content: '\2212' ;
+                        width: 35px;
+                        font-size: 25px;
+                        text-align: center;
+                        border-radius: 5px;
+                        right: 15px;
+                        top:24px;
+                        position: absolute;
+                     
+                    
+                    }
+                    .btn-link.collapsed::after{
+                        content: '\002B';
+                    }
+                    
+                    
+                }
+                
+               
+            }
+            }
+
+    }
+    
+}
+
+
+.card-body{
+    margin-top: -27px;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-family: 'robotolight';
+    font-size: 14px;
+    position: relative;
    
+   
+
+    ul{
+        display: flex;
+        position: relative;
+     
+        li{
+            
+            list-style: none;
+           left: 100px;
+            
+
+            img{
+                
+                padding-top:10px ;
+                width: 42.72px;
+                height: 32px;
+                padding-right:10.28px;
+                margin-left: -41px;
+
+            }
+            
+                
+                h2{
+                    padding-top: 10px;
+                    color:$lightGreen;
+                    font-size: 16px;
+                    font-weight: bolder;
+                    font-family: 'robotomedium';
+                    text-decoration: underline ;
+
+
+                }
+            
+            
+        }
+    }
+
+
 }
 h3{
+    text-align: center;
     font-size: 18px;
-    color: #292929;
-    text-align: center;
+    letter-spacing: 0.36px;
+    color: $mainColor;
+    font-family: 'robotobold';
+    padding-top: 36px;
+    padding-bottom: 36px;
 }
-.card,.card-header{
-    background-color: white!important;
-    border: none !important;
-    padding:0 !important;
-    margin-bottom:20px;
-    box-shadow: 0px 1px 2px #00000029;
 
-}
-.card{
-    box-shadow: 0px 1px 2px #00000029; 
-    border-bottom: none;
-}
-.btn-link{
-    width: 100%;
-    height: 60px;
-    color:  #000 !important;
-    font-weight: bold !important;
-    text-align: left !important;
-    text-decoration: none !important;
-}
-.card-body{
-    margin: 0 16px
 
-}
-.btn-link::after{
-    //minus sign
-    content: '\2212' ;
-    width: 35px;
-    font-size: 25px;
-    text-align: center;
-    border-radius: 5px;
-    right: 15px;
-    top:11px;
-    position: absolute;
- 
 
-}
-.btn-link.collapsed::after{
-    content: '\002B';
-}
+
+
 
 
 @media screen and (min-width: 682px) {
 
-    
+    .footer-container{
+        background-color: #FAFAFA;
+        
+        box-shadow: -7px 35px 29px -27px rgba(0,0,0,0.23);
+       
+    }
+    .container{
+        background-color: #FAFAFA;
+        width: 100%;
+        margin-top: -140px;
 
+    }
+ 
     .row{
         
-        width: 706px;
-        height: 60px;
+    
         margin: auto;
+        width: 60%;
 
+    }
+    h3{
+        margin-top: -170px;
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 0.36px;
+        color: $mainColor;
+        font-family: 'robotobold';
+    }
+
+    .below-card{
+        background-color: #ffff;
+        margin-top: 15px;
+        background-color: transparent;
     }
     
 }

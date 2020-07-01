@@ -1,3 +1,6 @@
+
+var maincolor = style.color = "#292929"
+
 $(document).ready(function() {
     $(".nav .nav-item").click(function () {
         $(".nav .nav-item").removeClass("btn-primary").addClass("btn-default");

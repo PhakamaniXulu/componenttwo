@@ -1,3 +1,5 @@
+@import '../stylings/fonts';
+@import '../stylings/colors';
 .head-container{
     background-color: white;
     position: relative;
@@ -5,8 +7,14 @@
   h2{
       margin-top: 55px;
       margin-bottom: 7px;
+      color: $mainColor;
+      font-size: 18px;
+      letter-spacing: 0.36px;
+      
   }
   p{
       margin-bottom:63.17px ;
+      color: $mainColor;
+      font-size: 12px;
   }
 }
