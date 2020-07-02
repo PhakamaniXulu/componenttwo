@@ -1,5 +1,5 @@
 # SCODA - Flask
-SCODA Website Repository
+Phakamani Dev Tasks Website Repository
 ## Readme Contents
 - [Project Documentation Links](/README.md#project-documentation-links)
 - [Creative Resources](/README.md#creative-resources)
@@ -9,11 +9,7 @@ SCODA Website Repository
 - [Module List and Syntax](/README.md#module-list-and-syntax)
 - [Techinical Specs For QA](/README.md#technical-specs-for-qa)
 - [Caveats, Dev Notes and or Outstanding Bugs](/README.md#caveats-dev-notes-and-or-outstanding-bugs)
-#### Information Resources
-- [Larger Data for DB seeds can be found here](https://drive.google.com/drive/folders/1tnI_EveGeeJg8-WnP5Js2doMDsQGT2Vh?usp=sharing)
-## Creative Resources
-- [SCODA UI](https://projects.invisionapp.com/d/main#/projects/prototypes/15567383)
-- Needs Design Spec
+
 ## Website Environments
 - [Staging Environment]()
 - No Live Environment yet
@@ -41,30 +37,7 @@ Then do the following:
 * clone the repo
 * install a virtual env and activate it: `virtualenv --no-site-packages env; source env/bin/activate`
 * install requirements: `pip install -r requirements.txt`
-### Setting up the Database with PostgreSQL
-Setup the PostgreSQL database (minimum version 9.6.*)
-```
-psql -U postgres
-=# CREATE USER scoda WITH PASSWORD 'scoda';
-=# CREATE DATABASE scoda;
-=# GRANT ALL PRIVILEGES ON DATABASE scoda TO scoda;
-=# \q
-```
-Construct your db app-side:
-```
-from opendatadurban.models import db
-from opendatadurban.models.seeds import seed_db
-run 'python rebuild_db.py'
-```
-#### Deploying database changes
-* SCODA App uses Flask-Migrate (which uses Alembic) to handle database migrations.
-* To add a new model or make changes, update the SQLAlchemy definitions in `opendatadurban/models/`. Then run
-`python app.py db migrate --message "a description of your change"`
-* This will autogenerate a change. Double check that it make sense. To apply it on your machine, run
-`python app.py db upgrade head`
-## Module list and syntax
-// Coming Soon
-## Technical Specs for QA
+
 #### Device and Browser Information
 V1.0 will be a mobile first web-app, designed purely for mobile but viewable by web.
 The following browsers and devices need to be 100% design match:
