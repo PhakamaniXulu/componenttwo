@@ -1,4 +1,4 @@
-# SCODA - Flask
+# Component Two
 Phakamani Dev Tasks Website Repository
 ## Readme Contents
 - [Project Documentation Links](/README.md#project-documentation-links)
