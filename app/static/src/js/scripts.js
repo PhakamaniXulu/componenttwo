@@ -1,5 +1,4 @@
-
-var maincolor = style.color = "#292929"
+//Nav pill iteration code
 
 $(document).ready(function() {
     $(".nav .nav-item").click(function () {

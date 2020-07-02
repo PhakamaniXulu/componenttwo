@@ -1,4 +1,6 @@
+//get the accordion class
 var acc = document.getElementsByClassName("accordion");
+//index value
 var i;
 
 for (i = 0; i < acc.length; i++) {

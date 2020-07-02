@@ -2,6 +2,6 @@ from flask import Flask
 
 app = Flask(__name__)
 
-from app.site.routes import mod
+from app.componenttwo.routes import mod
 
-app.register_blueprint(site.routes.mod)
+app.register_blueprint(componenttwo.routes.mod)
