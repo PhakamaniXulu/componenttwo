@@ -24,7 +24,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "jquery-validation": "^1.19.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "npm": "^6.9.0",
     "npm-install-all": "^1.1.21",
     "popper.js": "^1.14.7",
